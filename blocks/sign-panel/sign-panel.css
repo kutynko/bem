@@ -1,0 +1,23 @@
+.sign-panel {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sign-panel__buttons {
+    flex-grow: 1;
+    margin-left: 3em;
+}
+
+.sign-panel__inputs {
+    flex-grow: 1;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+
+.sign-panel--readonly .sign-panel__buttons {
+    display: none;
+}
+
+.sign-panel--readonly .sign-panel__inputs {
+    margin-left: 3em;
+}

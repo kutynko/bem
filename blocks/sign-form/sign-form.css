@@ -1,0 +1,35 @@
+.sign-form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sign-form__field {
+    align-items: center;
+    display: flex;
+    flex: 1 1 50%;
+    line-height: 2em;
+}
+
+.sign-form__field--wide {
+    flex-basis: 100%;
+}
+
+.sign-form__input {
+    flex: 1;
+    height: 1.7em;
+    margin: 0 1em 0 0.5em;
+}
+
+.sign-form--readonly .sign-form__buttons {
+    display: none;
+}
+
+.sign-form--readonly .sign-form__input {
+    background-color: lightgray;
+}
+
+@media all and (max-width: 500px) {
+    .sign-form__field {
+        flex-basis: 100%;
+    }
+}

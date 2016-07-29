@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-panel.css">
+    <link rel="stylesheet" href="../command-bar/command-bar.css">
+    <link rel="stylesheet" href="../layout-panel/layout-panel.css">
+    <link rel="stylesheet" href="../sign-form/sign-form.css">
+</head>
+
+<body>
+    <h1>Sign form example</h1>
+    <h2>Normal</h2>
+    <hr/>
+
+    <div class="sign-panel layout-panel layout-panel--horizontal">
+        <h2 class="layout-panel__title">Отметка о подписи</h2>
+        <div class="sign-panel__buttons command-bar">
+            <button class="command-bar__button command-bar__button--accept">Принять</button>
+            <button class="command-bar__button command-bar__button--reject">Отклонить</button>
+        </div>
+        <div class="sign-panel__inputs sign-form">
+            <label class="sign-form__field">Кем<select class="sign-form__input" name="authority"></select></label>
+            <label class="sign-form__field">Когда<input class="sign-form__input" type="date" name="date" /></label>
+            <label class="sign-form__field sign-form__field--wide">Коментарий<input class="sign-form__input" type="text" name="comment" /></label>
+        </div>
+    </div>
+
+    <h2>Readonly</h2>
+    <hr/>
+
+    <div class="sign-panel sign-panel--readonly layout-panel layout-panel--horizontal">
+        <h2 class="layout-panel__title">Отметка о подписи</h2>
+        <div class="sign-panel__buttons command-bar">
+            <button class="command-bar__button command-bar__button--accept">Принять</button>
+            <button class="command-bar__button command-bar__button--reject">Отклонить</button>
+        </div>
+        <div class="sign-panel__inputs sign-form">
+            <label class="sign-form__field">Кем<select class="sign-form__input" name="authority"></select></label>
+            <label class="sign-form__field">Когда<input class="sign-form__input" type="date" name="date" /></label>
+            <label class="sign-form__field sign-form__field--wide">Коментарий<input class="sign-form__input" type="text" name="comment" /></label>
+        </div>
+    </div>
+
+</body>
+
+</html>

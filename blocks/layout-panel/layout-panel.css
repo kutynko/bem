@@ -1,0 +1,15 @@
+.layout-panel {
+    border: 1px solid lightslategrey;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: column;
+    min-width: 300px;
+}
+
+.layout-panel__title {
+    margin: 1em;
+}
+
+.layout-panel--horizontal {
+    flex-flow: row wrap;
+}

@@ -1,0 +1,36 @@
+.command-bar {
+    align-items: center;
+    display: flex;
+    padding: 0.5em;
+}
+
+.command-bar--right {
+    justify-content: flex-end;
+}
+
+.command-bar__button {
+    border-radius: 0.3em;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin: 0.5em;
+    padding: 0.5em 1em;
+}
+
+.command-bar__button:active {
+    box-shadow: none;
+}
+
+.command-bar__button:focus {
+    outline: none;
+}
+
+.command-bar__button--accept {
+    background-color: lightgreen;
+    border: 0.5px solid forestgreen;
+}
+
+.command-bar__button--reject {
+    background-color: indianred;
+    border: 0.5px solid brown;
+    color: ghostwhite;
+    text-shadow: 0.5px 0.5px black;
+}
